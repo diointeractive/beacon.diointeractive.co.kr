@@ -728,6 +728,7 @@ p {
   color: #666;
   border-bottom: 1px solid #ececec;
   text-align: center;
+  font-family:'NanumBarunGothic', sans-serif;
 }
 
 .plan ul li:first-child {
