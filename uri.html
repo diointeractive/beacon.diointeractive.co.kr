@@ -58,10 +58,10 @@
 <h3><a class="anchor"><span class="octicon octicon-link"></span></a>How does this change things?</h3>
 <p>어떤 스마트 디바이스든지 웹 주소를 가질 수 있게 되면, 전반적인 앱상의 오버헤드들이 줄어들 수 있습니다. 물리적 웹으로의 접근은 ,실용적일 수 없었던 최소한의 어플리케이션 활용도를 높일 수 있는 기회가 됩니다. :</p>
 <ul>
-<li>-	버스 정류장이 다음 버스 도착시간을 알려줍니다.</li>
-<li>-	주차 정산기 뿐만 아니라 자판기 이용 시 결제 또한 신속하고 수월하게 할 수 있습니다.</li>
-<li>-	규모에 구애 받지 않고 소비자가 매장에 들어서면, 온라인 서비스를 제공할 수 있습니다.</li>
-<li>-	ZipCar는 회원 등록을 위한 페이지를 계속적으로 송신하며, 별도의 절차 없이 원하는 고객들은 운전이 가능하도록 합니다.</li>
+<li> 버스 정류장이 다음 버스 도착시간을 알려줍니다.</li>
+<li> 주차 정산기 뿐만 아니라 자판기 이용 시 결제 또한 신속하고 수월하게 할 수 있습니다.</li>
+<li> 규모에 구애 받지 않고 소비자가 매장에 들어서면, 온라인 서비스를 제공할 수 있습니다.</li>
+<li> ZipCar는 회원 등록을 위한 페이지를 계속적으로 송신하며, 별도의 절차 없이 원하는 고객들은 운전이 가능하도록 합니다.</li>
 </ul>
 <p>위의 실제 사례는 아주 적은 데이터와 간단한 쌍방향 통신에 대한 예입니다. 때로는 아주 작은 아이디어들이 세상을 바꾸기도 합니다.</p>
 
@@ -105,37 +105,38 @@
 	<img class="header" src="images/uribeacon-large.png">
 	<em>(pronounced YUR-ee-BEE-kun)</em>
 
-<p>Check out how UriBeacons are used in the <a href="http://google.github.io/physical-web/">Physical Web</a> project.</p>
+<p>UriBeacon이 어떻게 <a href="http://google.github.io/physical-web/">물리적 웹</a> 프로젝트에서 활용되는지 확인하세요.</p>
 
-<p><em>UriBeacon is subject to change and intended for comments and experimentation only.</em></p>
+<p><em>UriBeacon은 변경될 수 있으며, 의견 반영과 연구를 위한 목적으로만 활용됩니다.</em></p>
 
 <h2>
 <a id="why-we-created-uribeacon" class="anchor" href="#why-we-created-uribeacon" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why We Created UriBeacon</h2>
 
-<p>The UriBeacon Specification is designed with one goal in mind: to
-create the easiest, most open way to discover and use nearby smart
-things.</p>
+<p>UriBeacon의 스펙은 근처에 있는 스마트 기기를 탐색하고 활용하기 위한 가장 쉽고 개방된 방식을 개발할 것이라는 하나의 목표를 가지고 고안되었습니다</p>
 
-<p>UriBeacon is a wireless advertisement format for broadcasting Uris to
-any nearby device. By leveraging the Open Web it enables a
-<em>real</em>-World Wide Web where every person, place and thing can have its
-own Web presence. Our design is:</p>
+<p>근처에 위치한 모든 스마트 디바이스에 신호를 송신하기 위한 무선 광고의 형식을 띱니다. 
+   By leveraging the Open Web it enables 또한 UriBeacon이 오픈 웹상에 영향을 미침으로써, 모든 사람, 장소 그리고 디바이스들이 웹의 존재를 지닌다는, 
+   말 그대로 <em>리얼한</em>리얼한 월드 와이드 웹을 구현할 수 있도록 합니다. </p>
+   
+<p>UriBeacon은 아래와 같이 개발되었습니다.</p>
 
 <ol>
-<li>Compliant with Bluetooth 4.0 Advertising messages.</li>
-<li>Compatable with iOS and Android low power scanning modes.</li>
-<li>Independent of any particular hardware, user-agent, service or mobile platform.</li>
-<li>Openly licensed under Apache 2.0 and as such free of restrictive or proprietary terms.</li>
+<li>블루투스 4.0 신호를 따릅니다.</li>
+<li>iOS와 Android의 저전력 스캔 모드에 호환됩니다.</li>
+<li>특정 하드웨어, 사용자 에이전트, 서비스 또는 모바일 플랫폼에 독립적입니다.</li>
+<li>아팟치 라이선스 2.0을 취득하였으며, 특허등록 등에 있어 자유롭습니다.</li>
 </ol>
 
-<p>In short, UriBeacon connects low power beacons to the family of Open
-Web technologies and is one step towards making the Internet of Things as
-easy to use as the World Wide Web.</p>
+<p>I간략히 말하자면, UriBeaon은 저전력 비콘들을 오픈 웹 기술을 기반으로 하는 제품에 연결시킬 뿐만 아니라, 
+월드 와이드 웹으로써 사물인터넷을 더욱 쉽게 사용할 수 있도록 하기 위한 디딤돌입니다.</p>
 
 <h2>
 <a id="what-is-a-uri" class="anchor" href="#what-is-a-uri" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is a Uri?</h2>
 
-<p>One can classify URIs as Locators (URLs), or Names (URNs), or both. A Name functions like a person’s name (or Government ID number), while a Locator resembles that person’s postal address. In other words: URN is an item’s identity, while the URL is a method for finding it.</p>
+<p>URIs는 위치 탐색기(URLs) 또는 명칭(URNs) 또는 전부를 포함하여 분류될 수 있습니다.  
+명칭(URNs)으로써 URIs는 사람의 이름 또는 주민등록번호와 같은 역할을 하는 반면, 
+위치 탐색기(URLs)로써는 주소를 파악하는 역할을 하기도 합니다. 
+다시 말해, URN은 제품을 식별하고, URL은 그 제품의 위치파악을 위한 명령어가 됩니다.</p>
 
 <ul>
 <li>
@@ -146,24 +147,23 @@ easy to use as the World Wide Web.</p>
 </li>
 </ul>
 
-<p>UriBeacons can broadcast familiar HTTP URLs (<code>http</code> and <code>https</code>) as well as UUID URNs (128-bit universally unique identifiers).</p>
+<p>UriBeacon은 UUID인 URNs(전세계적으로 유일한 128비트 식별자) 뿐만 아니라 HTTP URL(<code>http</code> and <code>https</code>)을 브로드캐스팅합니다. </p>
 
 <h2>
 <a id="uribeacon-devices-and-tags" class="anchor" href="#uribeacon-devices-and-tags" aria-hidden="true"><span class="octicon octicon-link"></span></a>UriBeacon Devices and Tags</h2>
 
-<p>Various things may broadcast UriBeacons. Smart devices such as phones,
-tablets, laptops, vending machines, irrigation controllers may
-incorporate built in UriBeacons. Other things such as movie posters,
-bus stops, and meeting rooms may use small hardware devices, or tags,
-specifically designed to emit a UriBeacon advertisement. The libraries
-and sample code in this repository are a resource for developers who
-want to add UriBeacons in existing devices and also to create
-standalone UriBeacon tags.</p>
+<p>많은 기기들은 UriBeacon 신호를 송신할 수 있는데, 휴대폰, 태블릿, 노트북, 자판기뿐 아니라 
+관개 컨트롤러와 같은 스마트 기기들은 UriBeacon을 내장하여 그 기능을 수행할 수 있습니다. 
+그 이외로 영화 포스터, 버스 정류장 그리고 미팅룸 등에서는 
+UriBeacon 신호를 송신하도록 개발된 소형 하드웨어 기기 또는 태그 등을 사용 할 수 있습니다. 
+라이브러리와 샘플 코드는 Uri Beacon의 기능을 기존의 스마트 디바이스에 추가하거나 
+그 자체로 사용가능한 UriBeacon 태그의 개발을 원하는 개발자들에 중요한 자원이 됩니다.</p>
 
 <h2>
 <a id="disclaimer" class="anchor" href="#disclaimer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Disclaimer</h2>
 
-<p>This is not an official Google product. This is an early-stage experiment that we are developing in the open as we do all things related to the web. This should only be of interest to developers looking to provide feedback and <a href="CONTRIBUTING.md">contribute</a>.</p>
+<p>UriBeacon은 구글의 공식적 제품이 아닙니다. 이것은 저희 구글이 늘 웹에 기반한 서비스를 제공하는 것과 같은 맥락으로써, 오픈 형식으로 개발 단계에 있습니다. 
+이 프로젝트는 해당 서비스에 대한 피드백을 제공하고 <a href="CONTRIBUTING.md">기여</a>하고픈 개발자들로부터 많은 관심을 받고 있습니다..</p>
       </section>
     </div>
 
